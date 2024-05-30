@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.spinner {
+  text-align: center;
+  padding:20px;
+  font-size: 24px;
+}

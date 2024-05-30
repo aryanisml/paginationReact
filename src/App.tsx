@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Pagination from "./Components/Pagination";
 import { initialData } from "./Components/Data";
+import InfiniteScroll from "./Components/InfiniteScroll";
 
 function App() {
   const [currentPageCount, setCurrentPageCount] = useState(1);
@@ -52,7 +53,7 @@ function App() {
         onNextPage={nextPage}
         onSelectionPageCount={selectionPageChange}
       />
-
+      <InfiniteScroll />
   
     </>
   );
