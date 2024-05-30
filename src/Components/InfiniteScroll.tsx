@@ -28,6 +28,7 @@ const InfiniteScroll = () => {
     if (loadingRef.current) return;
     const scrollThreshold = 100; // Adjust as needed
     const divElement = divRef.current;
+    ///// window.scrollY + window.innerHeight > = document.body.offsetHeight- scrollThreshold
     if (divElement && divElement.scrollTop + divElement.clientHeight >= divElement.scrollHeight - scrollThreshold) {
       fetchData();
     }
